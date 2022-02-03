@@ -24,6 +24,7 @@ div>button{
     padding: 40px;
     margin-left: 100px;
     /* color: white; */
+    gap: 0.05em;
 }
 
 .ud{
