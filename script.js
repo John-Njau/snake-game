@@ -1,16 +1,31 @@
-var redCounter = document.getElementById("redCounter");
-var blueCounter = document.getElementById("blueCounter");
-var redScore = 0;
-var blueScore = 0;
-
-if(d1 < d2) {
-  status.innerHTML += " <br>Blue Wins!";
-  var blueCounter=+1;
-  blueScore ++;
-  blueCounter.innterHTML= "Blue has " + blueScore + " points!";
+window.onload= function(){
+    canv = document.getElementById("gc");
+    ctx = canv.getContext("2d");
+    document.addEventListener("keydown", keyPush);
+    setInterval(game, 1000/15);
 }
-else if(d1 > d2) {
-  status.innerHTML += " <br>Red Wins!";
-  var blueCounter=+1;
-  document.getElementByID("redCounter").innterHTML=redCounter;
+
+xv = yv =0;
+function game(){
+
+}
+
+//player positions
+
+// 37-40,,,Arrow keys .. left then clockwise
+function keyPush(evt){
+    switch(evt.keyCode) {
+        case 37:
+            xv = 1; yv = 0;
+            break;
+        case 38:
+            xv = 0; yv = 1;
+            break;
+        case 39:
+             xv = 1; yv = 0;
+            break;
+        case 40:
+            xv = 0; yv = 1;
+            break;
+    }
 }
