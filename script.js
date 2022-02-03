@@ -5,6 +5,7 @@ window.onload= function(){
     ctx = canv.getContext("2d");
     document.addEventListener("keydown", keyPush);
     setInterval(game, 1000/15);
+    this.scorediv = document.getElementById("score");
 }
 px=py=10; //player positions
 gs=tc=20; //grid size && tile count
@@ -42,6 +43,7 @@ function game(){
     while(trail.length>tail) {
     trail.shift();
     }
+    this.scorediv.innerHTML = "Score : " + (tail -5);
 
     if (ax == px && ay == py) {
         tail++;
