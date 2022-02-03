@@ -10,8 +10,10 @@ function game(){
 
 }
 
-//player positions
-
+px=py=10; //player positions
+gs=tc=20; //grid size && tile count
+ax =ay = 15; //apple x and apple y which is our goal.
+xv=yv=0; //x-velocity && y-velocity
 // 37-40,,,Arrow keys .. left then clockwise
 function keyPush(evt){
     switch(evt.keyCode) {
