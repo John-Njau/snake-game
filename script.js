@@ -72,3 +72,34 @@ function keyPush(evt){
             break;
     }
 }
+
+// // left key
+// function l() {
+//     if(ax === 0) {
+//       ax = -grid;
+//       ay = 0;
+//     }
+//   }
+
+//   // up key
+//   function u() {
+//     if(ay === 0) {
+//       ay = -grid;
+//       ax = 0;
+//     }
+//   }
+
+//   // right key 
+//   function r() {
+//     if(ax === 0) {
+//       ax = grid;
+//       ay = 0;
+//     }
+//   }
+//   // down key 
+//   function d() {
+//     if(ay === 0) {
+//       ay = grid;
+//       ax = 0;
+//     }
+//   }

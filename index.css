@@ -10,3 +10,32 @@ body{
 #score{
     display: inline-block;
 }
+
+div>button{
+    font-size: 50px;
+    font-weight: 700;
+    /* text-align: center; */
+    /* display: flex; */
+    /* flex-direction: column; */
+}
+
+#buttons{
+    display: flex;
+    padding: 40px;
+    margin-left: 100px;
+    /* color: white; */
+}
+
+.ud{
+    display: flex;
+    flex-direction: column;
+    width: 70px;
+}
+
+.lr{
+    display: flex;
+    flex-direction: row;
+    width: 70px;
+}
+
+
